@@ -8,7 +8,7 @@ function create-service-readme($readmeFolder, $readmeName, $moniker, $msService,
     $content += "[!INCLUDE [packages]($indexTableLink)]"
   }
   if (!$content) {
-    LogError "There are no packages under $serviceName. "
+    LogError "There are no packages under service '$serviceName'. "
     return
   }
   # Generate the front-matter for docs needs
